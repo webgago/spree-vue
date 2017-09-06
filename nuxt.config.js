@@ -21,6 +21,7 @@ module.exports = {
    ** Build configuration
    */
   build: {
+    vendor: ['axios'],
     /*
      ** Run ESLINT on save
      */
@@ -34,5 +35,8 @@ module.exports = {
         })
       }
     }
-  }
+  },
+
+  plugins: ['~/plugins/filters.js', '~/plugins/api.js'],
+  css: ['bootstrap/dist/css/bootstrap.css']
 }
